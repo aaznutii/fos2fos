@@ -1,9 +1,6 @@
 import zipfile
 from lxml import etree
-import pandas as pd
-
-FILE_PATH = r'F:\WORK\DIGITAL\fos2fos\Docs\fos/'
-FILE_NAME = 'ФОС_Феномен факта в современных масс-медиа_ДО.docx'
+from Functions import get_file_path, get_file_name
 
 
 class Application:
@@ -21,6 +18,6 @@ class Application:
         return (etree.fromstring(xml_string))
 
 
-a = Application(FILE_PATH, FILE_NAME)
+a = Application(get_file_path(), get_file_name())
 
 print(a.xml_tree)

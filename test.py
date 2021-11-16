@@ -89,3 +89,4 @@ def get_img(doc_path):
 
 # get_img(f'{PATH_fos}ФОС_Феномен факта в современных масс-медиа_ДО.docx')
 create_docx_file()
+
